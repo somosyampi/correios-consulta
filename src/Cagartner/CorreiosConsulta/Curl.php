@@ -6,7 +6,7 @@ class Curl
     {
         $conn = curl_init();
         curl_setopt($conn, CURLOPT_URL, $path);
-        curl_setopt($conn, CURLOPT_TIMEOUT, 30);
+        curl_setopt($conn, CURLOPT_TIMEOUT, 8);
         curl_setopt($conn, CURLOPT_PORT, $port);
         curl_setopt($conn, CURLOPT_RETURNTRANSFER, 1) ;
         curl_setopt($conn, CURLOPT_CUSTOMREQUEST, $method);
